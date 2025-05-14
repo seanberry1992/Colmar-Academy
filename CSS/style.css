@@ -4,28 +4,127 @@
     box-sizing: border-box;
 }
 
-.site-header {
+/* Desktop styles (from 768px and up) */
+@media (min-width: 768px) {
+
+  /* Site header container styles */
+  .site-header {
     height: 64px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 24px;
-}
+  }
 
-.logo {
+  
+  .logo {
     display: flex;
     align-items: center;
     height: 32px;
-}
+  }
 
-.logo img {
+  
+  .logo img {
     height: 32px;
     width: auto;
   }
 
-.site-header nav ul {
+  
+  .site-header nav ul {
     display: flex;
     gap: 16px;
     list-style: none;
+  }
+
+  /* Banner-1 styles */
+  .banner-1 {
+    background-color: gray;
+    display: flex;
+    padding: 32px 24px;
+  }
+
+  .banner-1 img {
+    width: 60%;
+    margin-right: 24px;
+  }
+
+  .banner-1 .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  /* banner-2 styles */
+    .banner-2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 24px;
+      background-color: yellow;
+      padding: 32px 24px;
+    }
+  
+    .left-column {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  
+    .left-column img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+  
+    .article-list {
+      width: 40%;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+  
+    .article-card {
+      display: flex;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid black;
+    }
+  
+    .article-card img {
+      width: 35%;
+      margin-right: 16px;
+      display: block;
+    }
+  
+    .article-text-container {
+      width: 65%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 8px;
+    }
+  
+    .article-text-container h2,
+    .article-text-container p,
+    .article-text-container a {
+      margin: 0;
+      padding: 0;
+      line-height: 1.2;
+    }  
+
+
 }
