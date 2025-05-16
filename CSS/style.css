@@ -70,46 +70,46 @@
       background-color: yellow;
       padding: 32px 24px;
     }
-  
+
     .left-column {
       width: 60%;
       display: flex;
       flex-direction: column;
       gap: 24px;
     }
-  
+
     .left-column img {
       width: 100%;
       height: auto;
       display: block;
     }
-  
+
     .text-container {
       display: flex;
       flex-direction: column;
       gap: 16px;
     }
-  
+
     .article-list {
       width: 40%;
       display: flex;
       flex-direction: column;
       gap: 2px;
     }
-  
+
     .article-card {
       display: flex;
       align-items: center;
       padding: 16px;
       border: 1px solid black;
     }
-  
+
     .article-card img {
       width: 35%;
       margin-right: 16px;
       display: block;
     }
-  
+
     .article-text-container {
       width: 65%;
       display: flex;
@@ -117,14 +117,65 @@
       justify-content: center;
       gap: 8px;
     }
-  
+
     .article-text-container h2,
     .article-text-container p,
     .article-text-container a {
       margin: 0;
       padding: 0;
       line-height: 1.2;
-    }  
+    }
 
+    .banner-3 {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 32px 72px;
+      background-color: palevioletred;
+    }
+
+    .banner-3 h1 {
+      margin: 32px auto 0px auto;
+    }
+
+    .course-list-top,
+    .course-list-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 32px;
+    }
+
+    .course-list-top {
+      margin: 32px 72px 16px 72px;
+    }
+
+    .course-list-bottom {
+      margin: 16px 72px 32px 72px;
+    }
+
+    .course-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+    align-items:flex-start;
+    justify-content: flex-start;
+    text-align: start;
+    max-width: 300px;
+    }
+
+    .course-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    }
+
+    .course-text-container {
+      display: flex;
+      flex-direction: column;
+      margin: 16px 16px 24px 16px;
+      gap: 8px;
+    }
 
 }
