@@ -1,8 +1,14 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 
 h1 {
     font-family: "Abril Fatface", serif;
@@ -51,12 +57,12 @@ a:hover {
   border: none;
 }
 
-img, video, button, .article-card, .course-card {
-  border: 1px solid #5B5B5B;
-}
-
 /* Desktop styles (from 768px and up) */
 @media (min-width: 768px) {
+
+  img, video, button, .article-card, .course-card {
+    border: 1px solid #5B5B5B;
+  }
 
   /* Site header container styles */
   .site-header {
@@ -70,14 +76,14 @@ img, video, button, .article-card, .course-card {
     border-bottom: 2px solid #5B5B5B;
   }
 
-  
+
   .logo {
     display: flex;
     align-items: center;
     height: 32px;
   }
 
-  
+
   .logo img {
     height: 32px;
     width: auto;
@@ -87,7 +93,7 @@ img, video, button, .article-card, .course-card {
     color:#5B5B5B;
   }
 
-  
+
   .site-header nav ul {
     display: flex;
     gap: 16px;
@@ -99,6 +105,22 @@ img, video, button, .article-card, .course-card {
 
   .site-header li {
     color: black;
+  }
+
+  nav a span {
+    display: inline;
+  }
+
+  nav a img {
+    display: none;
+  }
+
+  .site-header-mobile {
+    display: none;
+  }
+
+  .header-icons {
+    display: none;
   }
 
   /* Banner-1 styles */
@@ -251,7 +273,6 @@ img, video, button, .article-card, .course-card {
       background-color: #C9C19F;
       padding-top: 32px;
       border-bottom: 2px solid #5B5B5B;
-}
     }
 
     .banner-4 h1 {
@@ -314,5 +335,36 @@ img, video, button, .article-card, .course-card {
       list-style: none;
       gap: 10px;
     }
+  }
 
+
+
+/* Mobile styles (Up to 767px) */
+
+@media (max-width: 767px) {
+
+/* Hide original logo + nav on mobile */
+.site-header .logo,
+.site-header nav {
+  display: none;
+}
+
+/* Style the flattened mobile header */
+.header-icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0 8px;
+  background-color: #EDF7B5;
+  height: 64px;
+  border-bottom: 2px solid #5B5B5B;
+  width: 100%;
+}
+
+.header-icons li img {
+  height: 32px;
+  display: block;
+}
 }
