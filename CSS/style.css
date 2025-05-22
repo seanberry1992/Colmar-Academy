@@ -367,4 +367,56 @@ a:hover {
   height: 32px;
   display: block;
 }
+
+
+/* Banner 1 styles */
+
+.banner-1 {
+  background-color: #C9C19F;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid #5B5B5B;
+  
+}
+
+.banner-1 img {
+  width: 99%;
+  margin-top: 1px;
+  align-self: center;
+}
+
+.banner-1 .text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 32px 16px 24px 16px;
+}
+
+.banner-1 .text-container button {
+  margin-top: -8px;
+}
+
+.banner-1 h1, h3 {
+  margin: 0;
+}
+
+button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+/* Styles for banner-2 */
+
+.banner-2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #EDF7D2;
+  border-bottom: 2px solid #5B5B5B;
+}
+
+.banner-2 .left-column img {
+  padding: 16px;
+  width: 100%;
+}
+
 }
