@@ -193,9 +193,16 @@ a:hover {
       background-color: beige;
     }
 
-    .article-card img {
+    .article-card picture {
       width: 35%;
+      height: auto;
       margin-right: 16px;
+      display: block;
+    }
+
+    .article-card picture img {
+      width: 100%;
+      height: auto;
       display: block;
     }
 
@@ -204,6 +211,7 @@ a:hover {
       flex-direction: column;
       justify-content: center;
       gap: 8px;
+      width: 65%;
     }
 
     .article-text-container h2,
@@ -213,6 +221,8 @@ a:hover {
       padding: 0;
       line-height: 1.2;
     }
+
+    /* Banner-3 styles */
 
     .banner-3 {
       display: flex;
@@ -241,7 +251,7 @@ a:hover {
     }
 
     .course-list-bottom {
-      margin: 16px 72px 32px 72px;
+      margin: 16px 72px 0 72px;
 
     }
 
@@ -254,6 +264,7 @@ a:hover {
     justify-content: flex-start;
     text-align: start;
     max-width: 300px;
+    margin-bottom: 0;
     }
 
     .course-card img {
@@ -269,9 +280,19 @@ a:hover {
       gap: 8px;
     }
 
+    .course-text-container h2, h3, p {
+      margin: 0;
+    }
+
+    .course-text-container h3 {
+      opacity: 0.75;
+    }
+
     .banner-3-mobile {
       display: none;
     }
+
+    /* Banner-4 Styles */
 
     .banner-4 {
       background-color: #C9C19F;
@@ -281,9 +302,8 @@ a:hover {
 
     .banner-4 h1 {
       display: flex;
-      /*margin: 32px auto 32px auto; */
+      margin: 0;
       justify-content: center;
-      margin-top: 0;
       padding-bottom: 32px;
     }
 
@@ -307,9 +327,17 @@ a:hover {
       margin-bottom: 24px;
     }
 
+     .article-card img {
+      width: 35%;
+      height: auto;
+      margin-right: 16px;
+      display: block;
+    }
+
     .thesis-text-container {
       display: flex;
       flex-direction: column;
+      width: 65%;
       gap: 8px;
     }
 
@@ -498,5 +526,42 @@ button {
     padding: 0;
     margin: 0;
   }
+
+  /* Banner-4 Styles */
+
+.banner-4 {
+      background-color: #C9C19F;
+      padding-top: 32px;
+      border-bottom: 2px solid #5B5B5B;
+    }
+
+    .banner-4 h1 {
+      display: flex;
+      margin: 0;
+      justify-content: center;
+      margin-top: 0;
+      padding-bottom: 16px;
+    }
+
+    .thesis-left {
+      width: 100%;
+      align-content: center;
+    }
+
+    .thesis-right {
+      display: none;
+    }
+
+    .thesis-left video {
+      width: 99%;
+      margin: 0 auto 24px auto;
+      display: block;
+    }
+
+    .thesis-text-container {
+      display: none;
+    }
+
+   
 
 }
